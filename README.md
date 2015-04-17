@@ -5,7 +5,7 @@ Combination of ng-img-crop & blueimp-load-image allows to pick any image from de
 
 blueimp-load-image gives a powerful addition to tackle above mentioned issues.
 
-![alt tag](/info/images/welcome.png =300)
-![alt tag](/info/images/choose.png =300)
-![alt tag](/info/images/resize.png =300)
-![alt tag](/info/images/final.png =300)
+![Welcome](/info/images/welcome.png)
+![Choose](/info/images/choose.png)
+![Resize](/info/images/resize.png)
+![Final](/info/images/final.png)
