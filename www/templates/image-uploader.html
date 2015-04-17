@@ -1,0 +1,29 @@
+<button class="button icon ion-android-close pop-close" ng-style="labelCSS('app-icon-label')" ng-click="closeUploader()"></button>
+
+<div ng-controller="ImageUploaderCtrl" id="image-uploader"> 
+	<div id="image-show">
+		<div class="center">
+			<input type="file" id="fileInput" ng-hide="true"/>
+			<input type="button" onclick="document.getElementById('fileInput').click()" value="Choose" ng-show="!preview" class="save-button" ng-style="buttonCSS('header', 'save')"/>
+			<input type="button" value="Save" ng-click="setNewPic(resImageDataURI)" ng-show="preview" class="save-button" ng-style="buttonCSS('header', 'save')"/>
+		</div>
+	    <div class="cropArea">
+		    <img-crop image="imageDataURI"
+		              result-image="resImageDataURI"
+		              change-on-fly="changeOnFly"
+		              area-type="{{type}}"
+		              area-min-size="selMinSize"
+		              result-image-format="{{resImgFormat}}"
+		              result-image-quality="resImgQuality"
+		              result-image-size="resImgSize"
+		              on-change="onChange($dataURI)"
+		              on-load-begin="onLoadBegin()"
+		              on-load-done="onLoadDone()"
+		              on-load-error="onLoadError()"
+		    ></img-crop>
+		    <div class="circle-image-container">
+		    	<img ng-src="{{resImageDataURI}}" id="preview-image" ng-show="preview" class="circular-image-profile" />
+		    </div>
+	    </div>
+    </div>
+</div>

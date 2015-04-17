@@ -1,0 +1,13 @@
+/* Empty. Add your own CSS if you like */
+
+.center{
+	text-align: center;
+}
+.circle-image-container img{
+	height: 100px;
+	width: 100px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border-radius: 50px;
+	border: solid 1px grey;
+}
