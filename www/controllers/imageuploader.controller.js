@@ -33,6 +33,7 @@ angular.module('ProfileDemoController')
             var displayImg = function(img) {
               $scope.$apply(function($scope){
                  $scope.imageDataURI=img.toDataURL();
+                 console.log($scope.imageDataURI);
               });
             }
             loadImage.parseMetaData(file, function (data) {

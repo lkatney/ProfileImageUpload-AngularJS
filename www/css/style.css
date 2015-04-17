@@ -1,5 +1,14 @@
 /* Empty. Add your own CSS if you like */
 
+
+input[type=button]{
+	width: 50%;
+	border-radius: 30px;
+	background-color: #FFF;
+	border-color: #FFF;
+	font-size: 15px;
+}
+
 .center{
 	text-align: center;
 }
@@ -11,3 +20,81 @@
 	border-radius: 50px;
 	border: solid 1px grey;
 }
+
+
+/* Image crop css*/
+img-crop{
+    position : inherit !important;
+}
+
+img-crop canvas{
+    margin-left : 0 !important;
+    top : 15% !important;
+    left: 0 !important;
+    right: 0 !important;
+    margin: 0 auto !important;
+}
+.cropArea {
+    margin: auto;
+    overflow: hidden;
+}
+
+@media (min-width: 821px) {
+    .cropArea{
+        width: 800px;
+        height: 600px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 820px) {
+    .cropArea {
+        width: 500px;
+        height: 350px;
+    }
+}
+
+#image-uploader div {
+    margin-top: 15px;
+}
+#image-show {
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+#preview-image{
+    position: absolute;
+    margin-left: 10px;
+    top: 0;
+}
+
+/* Popup css */
+
+.backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.popup-head {
+    display: none;
+}
+.popup {
+    background-color: transparent !important;
+    width: 100% !important;
+    height: 100%;
+    -ms-overflow-style: none;
+}
+.pop-close {
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: 0;
+    float: right;
+    bottom: 20px;
+}
+.pop-close.apps-popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: auto;
+}
+.popup-body {
+    height: 100%;
+}
+
