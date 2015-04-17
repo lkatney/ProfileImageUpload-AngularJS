@@ -1,0 +1,21 @@
+<ion-view>
+  <ion-content class="has-header">
+      <div class="circle-image-container center">
+        <a ng-click="showUploader()"><img ng-src="{{uploadedPic ? uploadedPic : '/img/default.png'}}" class="circular-image-profile" /></a>
+      </div>
+      <div class="list">
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">First Name</span>
+          <input type="text" placeholder="John">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Last Name</span>
+          <input type="text" placeholder="Suhr">
+        </label>
+        <label class="item item-input item-stacked-label">
+          <span class="input-label">Email</span>
+          <input type="text" placeholder="john@suhr.com">
+        </label>
+      </div>
+  </ion-content>
+</ion-view>

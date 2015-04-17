@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="lib/ng-img-crop/compile/minified/ng-img-crop.css" />
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+
+    <!-- custom scripts -->
+    <script src="controllers/profile.controller.js"></script>
+    <script src="controllers/imageuploader.controller.js"></script>
+
+    <!-- lib scripts-->
+    <script src="lib/ng-img-crop/compile/minified/ng-img-crop.js"></script>
+     <script src="lib/blueimp-load-image/js/load-image.js"></script>
+    <script src="lib/blueimp-load-image/js/load-image-ios.js"></script>
+    <script src="lib/blueimp-load-image/js/load-image-orientation.js"></script>
+    <script src="lib/blueimp-load-image/js/load-image-meta.js"></script>
+    <script src="lib/blueimp-load-image/js/load-image-exif.js"></script>
+    <script src="lib/blueimp-load-image/js/load-image-exif-map.js"></script>
+
+  </head>
+  <body ng-app="ProfileDemo" class="platform-ios platform-cordova platform-webview">
+
+    <ion-pane>
+      <ion-header-bar class="bar-stable">
+        <h1 class="title">Sample Profile Page</h1>
+      </ion-header-bar>
+
+      <!--
+      The views will be rendered in the <ion-nav-view> directive below
+      Templates are in the /templates folder (but you could also
+      have templates inline in this html file if you'd like).
+    -->
+      <ion-nav-view></ion-nav-view>
+
+    </ion-pane>
+  </body>
+</html>
